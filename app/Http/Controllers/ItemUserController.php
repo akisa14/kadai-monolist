@@ -16,7 +16,7 @@ class ItemUserController extends Controller
 
         // Search items from "itemCode"
         $client = new \RakutenRws_Client();
-        $client->setApplicationId(env('RAKUTEN_APPLICATION_ID'));
+        $client->setApplicationId(env('1003672839046865178'));
         $rws_response = $client->execute('IchibaItemSearch', [
             'itemCode' => $itemCode,
         ]);

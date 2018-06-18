@@ -13,7 +13,7 @@ use \App\Item;
         $items = [];
         if ($keyword) {
             $client = new \RakutenRws_Client();
-            $client->setApplicationId(env('RAKUTEN_APPLICATION_ID'));
+            $client->setApplicationId(env('1003672839046865178'));
 
             $rws_response = $client->execute('IchibaItemSearch', [
                 'keyword' => $keyword,
